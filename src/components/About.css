@@ -32,11 +32,12 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
+    padding: 1rem;
 }
 .paragraph{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 3rem;
     font-size: 30px;
 }
