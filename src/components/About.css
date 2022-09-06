@@ -41,7 +41,7 @@
   height: 30vh;
 }
 
-@media (min-width: 1504px) {
+@media (max-width: 1504px) {
   .paragraph {
     display: flex;
     justify-content: center;
