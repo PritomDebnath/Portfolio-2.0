@@ -23,8 +23,9 @@ function App() {
     <>
       <Moon />
       <div className={ready ? "showContent" : "noContent"}>
-        <Content/>
+        <Content />
       </div>
+      <Nav />
     </>
   );
 }

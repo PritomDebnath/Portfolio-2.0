@@ -65,7 +65,7 @@ function Moon() {
               transform: `translateY(${scrollY * 0}px)`,
             }}
           />
-          <Nav />
+          
           <Background />
           <Loading />
         </div>

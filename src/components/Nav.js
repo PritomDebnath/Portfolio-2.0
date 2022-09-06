@@ -3,6 +3,7 @@ import "./Nav.css";
 function Nav() {
   const [scrollY, setScrollY] = useState(0);
   const [scrolled, setscrolled] = useState(false)
+  const [load, setload] = useState(false)
   const handleScroll = () => setScrollY(window.scrollY);
 
   useEffect(() => {
@@ -12,14 +13,16 @@ function Nav() {
       setscrolled(false)
     }
   });
-
+useEffect(()=>{
+  console.log(scrollY)
+})
 
   window.addEventListener("scroll", handleScroll);
   return (
     <div className={scrolled? "navScroll": "nav"}>
       <div className="header">
-        <div className="logo">
-          <h1></h1>
+        <div className={scrolled? "logo":"blocxk"}>
+          <h1>PRITOM</h1>
         </div>
         <div className="menu">
           <li>About</li>

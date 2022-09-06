@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import pic from "../assets/img/pic.jpg";
+import profpic from "../assets/img/pic.jpg";
 import { TypeAnimation } from "react-type-animation";
 function About() {
   return (
@@ -16,7 +16,7 @@ function About() {
           </p>
         </div>
         <div className="picture">
-          <img src={pic} alt="" />
+          <img src={profpic} alt="" />
           <TypeAnimation
             sequence={["About Me", 1000, "Who am I?", 1000, "What I do", 1000]}
             speed={40}
