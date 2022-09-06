@@ -1,19 +1,33 @@
-import React from 'react'
-
+import React from "react";
+import "./About.css";
+import pic from "../assets/img/pic.jpg";
+import { TypeAnimation } from "react-type-animation";
 function About() {
   return (
-    <div className="text2">
-        <h1>About Me</h1>
-        <h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non
-        </h2>
+    <div className="about">
+      <div className="box">
+        <div className="paragraph">
+          <p>
+            I am a passionate and eager to grow web developer that continuously
+            strives to learn and adapt with the ever-growing tech environment.
+            Over the past two years I have developed my skills in full stack web
+            development with a focus on MERN stack in order to produce beautiful
+            websites with demanding functionalities.
+          </p>
+        </div>
+        <div className="picture">
+          <img src={pic} alt="" />
+          <TypeAnimation
+            sequence={["About Me", 1000, "Who am I?", 1000, "What I do", 1000]}
+            speed={40}
+            style={{ fontSize: "50px", fontWeight: "bold" }}
+            wrapper="span"
+            repeat={Infinity}
+          />
+        </div>
       </div>
-  )
+    </div>
+  );
 }
 
-export default About
+export default About;

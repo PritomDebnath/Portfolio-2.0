@@ -1,0 +1,46 @@
+.about{
+  
+    padding: 2.5rem;
+    
+}
+.box{
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 7px solid rgb(143, 52, 240);
+    border-radius: 2rem;
+    animation: glow 3s  infinite;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: inset 0 0 2em 0  rgb(143, 52, 240),
+        0 0 5em 0  rgb(143, 52, 240);
+    }
+    50%{
+        box-shadow: inset 0 0 2em 0  rgb(39, 55, 201),
+        0 0 3em 0  rgb(49, 37, 213);
+    }
+    100%{
+        box-shadow: inset 0 0 2em 0  rgb(143, 52, 240),
+        0 0 5em 0  rgb(143, 52, 240);
+    }
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 30px;
+}
+.picture img{
+    border-radius: 50%;
+    height: 30vh;
+}

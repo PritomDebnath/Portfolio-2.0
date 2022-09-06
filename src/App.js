@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Moon from "./components/Moon";
 import About from "./components/About";
 import { useEffect, useState } from "react";
+import Content from "./components/Content";
 
 function App() {
   const [ready, setReady] = useState(false);
@@ -22,7 +23,7 @@ function App() {
     <>
       <Moon />
       <div className={ready ? "showContent" : "noContent"}>
-        <About />
+        <Content/>
       </div>
     </>
   );
