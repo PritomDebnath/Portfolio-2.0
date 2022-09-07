@@ -32,8 +32,8 @@ function ProjectOne({scroll}) {
     <div className="pic">
       <img src={pic1} alt="" />
       <div className="links">
-        <button>Github</button>
-        <button>Website</button>
+        <a href="https://www.youtube.com/" target= "_blank" rel ={"noopener noreferrer"}>Github</a>
+        <a href="https://www.youtube.com/" target= "_blank" rel ={"noopener noreferrer"}>Website</a>
       </div>
     </div>
   </div>
